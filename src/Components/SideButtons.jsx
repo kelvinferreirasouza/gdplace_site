@@ -56,6 +56,8 @@ const SideButtons = memo((props) => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
         [location])
 
+    console.log(visible)
+
     return (
         <></>
         // <m.div className={`${show ? "block h-[100vh] left-0 overflow-hidden fixed top-0 w-full z-[16]" : "fixed z-[16]"}`} initial={{ opacity: 0, visibility: "hidden" }} animate={visible ? { opacity: 1, visibility: "visible" } : { opacity: 0, visibility: "hidden" }} transition={{ duration: 0.5 }}>

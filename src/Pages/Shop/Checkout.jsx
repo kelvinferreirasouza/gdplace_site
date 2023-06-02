@@ -18,10 +18,10 @@ import { resetForm } from '../../Functions/Utilities';
 
 const Checkout = (props) => {
 
-  const [isCustomerCollapse, setIsCustomerCollapse] = useState(false)
-  const [isCoupen, setIsCoupen] = useState(false)
-  const [isCreateCollapse, setIsCreateCollapse] = useState(false)
-  const [isShipCollapse, setIsShipCollapse] = useState(false)
+  const [isCustomerCollapse] = useState(false)
+  const [isCoupen] = useState(false)
+  const [isCreateCollapse] = useState(false)
+  const [isShipCollapse] = useState(false)
 
   useEffect(() => {
     let label = document.querySelectorAll(".active-accordion")
@@ -93,7 +93,13 @@ const Checkout = (props) => {
               <div className="justify-center items-center pb-[10px] text-center">
                 <i className="feather-user text-fastblue mr-[10px]"></i>
                 <span className="text-darkgray font-serif">Returning customer?&nbsp;</span>
-                <a className="accordion-toggle text-darkgray hover:text-darkgray" onClick={(e) => (e.preventDefault(), setIsCustomerCollapse(!isCustomerCollapse))}><span className="font-serif border-b border-black">Click here to login</span></a>
+                {/* <a 
+                  className="accordion-toggle text-darkgray hover:text-darkgray"
+                  href="#"
+                  onClick={(e) => (e.preventDefault(), setIsCustomerCollapse(!isCustomerCollapse))}
+                >
+                  <span className="font-serif border-b border-black">Click here to login</span>
+                </a> */}
               </div>
               <Collapse in={isCustomerCollapse}>
                 <div id="collapseOne">
@@ -140,7 +146,7 @@ const Checkout = (props) => {
                 <div className="justify-center items-center text-center">
                   <i className="feather-scissors text-fastblue mr-[10px]"></i>
                   <span className="text-darkgray font-serif">Have a coupon?&nbsp;</span>
-                  <a className="accordion-toggle text-darkgray hover:text-darkgray" onClick={(e) => (e.preventDefault(), setIsCoupen(!isCoupen))}><span className="font-serif border-b border-black">Click here to enter your code</span></a>
+                  {/* <a className="accordion-toggle text-darkgray hover:text-darkgray" onClick={(e) => (e.preventDefault(), setIsCoupen(!isCoupen))}><span className="font-serif border-b border-black">Click here to enter your code</span></a> */}
                 </div>
                 <Collapse in={isCoupen}>
                   <div id="collapseTwo">
@@ -484,7 +490,7 @@ const Checkout = (props) => {
                       <p className="title mb-[2px] flex">
                         <label className="mb-[5px]">
                           <input className="inline w-auto mb-0 mr-[7px] mt-[3.5px]" type="checkbox" name="account" />
-                          <a aria-label="create-account" className="accordion-toggle text-black" onClick={(e) => (e.preventDefault(), setIsCreateCollapse(!isCreateCollapse))}><span className="inline-block text-[#828282] text-decoration-none">Create an account?</span></a>
+                          {/* <a aria-label="create-account" className="accordion-toggle text-black" onClick={(e) => (e.preventDefault(), setIsCreateCollapse(!isCreateCollapse))}><span className="inline-block text-[#828282] text-decoration-none">Create an account?</span></a> */}
                         </label>
                       </p>
                       <Collapse in={isCreateCollapse}>
@@ -502,7 +508,7 @@ const Checkout = (props) => {
                       <p className="title mb-[2px] flex">
                         <label className="mb-[5px]">
                           <input className="inline w-auto mb-0 mr-[7px] mt-[3.5px]" type="checkbox" name="account" />
-                          <a aria-label="shipping" className="accordion-toggle text-black" onClick={(e) => (e.preventDefault(), setIsShipCollapse(!isShipCollapse))}><span className="inline-block text-[#828282] text-decoration-none mb-[7px]">Ship to a different address?</span></a>
+                          {/* <a aria-label="shipping" className="accordion-toggle text-black" onClick={(e) => (e.preventDefault(), setIsShipCollapse(!isShipCollapse))}><span className="inline-block text-[#828282] text-decoration-none mb-[7px]">Ship to a different address?</span></a> */}
                         </label>
                       </p>
                       <Collapse in={isShipCollapse}>
@@ -872,7 +878,6 @@ const Checkout = (props) => {
                         <label>
                           <input className="inline w-auto mr-[10px] mb-0" type="radio" name="payment-option" />
                           <span className="inline-block">Direct bank transfer</span>
-                          <a aria-label="bank-transfer" className="accordion-toggle hover:text-[#828282]" onClick={(e) => e.preventDefault()}><i className="fa fa-phone hidden" aria-hidden="true"></i></a>
                         </label>
                       </Accordion.Header>
                       <Accordion.Body className='p-0'>
@@ -884,7 +889,6 @@ const Checkout = (props) => {
                         <label>
                           <input className="inline w-auto mr-[10px] mb-0" type="radio" name="payment-option" />
                           <span className="inline-block">Check payments</span>
-                          <a aria-label="payments" className="accordion-toggle collapsed hover:text-[#828282]" onClick={(e) => e.preventDefault()}><i className="fa fa-phone hidden" aria-hidden="true"></i> </a>
                         </label>
                       </Accordion.Header>
                       <Accordion.Body className='p-0'>
@@ -896,7 +900,6 @@ const Checkout = (props) => {
                         <label>
                           <input className="inline w-auto mr-[10px] mb-0" type="radio" name="payment-option" />
                           <span className="inline-block">Cash on delivery</span>
-                          <a aria-label="cash-on-delivery" className="accordion-toggle collapsed hover:text-[#828282]" onClick={(e) => e.preventDefault()}><i className="fa fa-phone hidden" aria-hidden="true"></i> </a>
                         </label>
                       </Accordion.Header>
                       <Accordion.Body className='p-0'>
@@ -908,7 +911,6 @@ const Checkout = (props) => {
                         <label className="mb-[5px] flex items-center">
                           <input className="inline w-auto mr-[10px] mb-0" type="radio" name="payment-option" />
                           <span className="flex items-center">PayPal <img height="" width="" loading="lazy" src="https://via.placeholder.com/319x110" alt="" className="w-[120px] ml-[10px]" data-no-retina="" /></span>
-                          <a aria-label="payments-with-paypal" className="accordion-toggle collapsed hover:text-[#828282]" onClick={(e) => e.preventDefault()}><i className="fa fa-phone hidden" aria-hidden="true"></i> </a>
                         </label>
                       </Accordion.Header>
                       <Accordion.Body className='p-0'>

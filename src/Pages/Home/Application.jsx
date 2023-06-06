@@ -29,6 +29,7 @@ import { TestimonialsCarouselData4 } from '../../Components/TestimonialCarousel/
 import InViewPort from '../../Components/InViewPort';
 import HeaderGdplace from '../../Components/Header';
 import CarouselDistribuidores from '../../Components/Distribuidores/Carousel';
+import WhatsAppFloatingBtn from '../../Components/WhatsApp';
 
 const IconWithTextData = [
     {
@@ -135,6 +136,8 @@ const ApplicationPage = (props) => {
             {/* Header Start */}
             <HeaderGdplace type="reverse-scroll" {...props} />
             {/* Header End */}
+
+            <WhatsAppFloatingBtn />
 
             {/* Section Start */}
             <section className="bg-cover bg-no-repeat overflow-visible bg-center" style={{ backgroundImage: "url('/assets/img/webp/home/banner-background.webp')" }}>

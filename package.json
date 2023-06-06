@@ -27,6 +27,7 @@
     "react-countdown": "^2.3.2",
     "react-countup": "^6.2.0",
     "react-dom": "^18.1.0",
+    "react-floating-whatsapp": "^5.0.8",
     "react-google-recaptcha": "^2.1.0",
     "react-in-viewport": "^1.0.0-alpha.30",
     "react-js-progressbar": "^1.1.1",

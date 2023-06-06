@@ -567,3 +567,20 @@
     }
   }
 }
+
+.whatsappButton {
+    img {
+      width: 40px !important;
+      height: 40px !important;
+      margin: 0 auto;
+
+    }
+
+    footer {
+        button {
+           svg {
+                margin-left: .75rem;
+           } 
+        }
+    }
+}

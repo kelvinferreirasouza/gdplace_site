@@ -8,9 +8,6 @@ import { AnimatePresence } from "framer-motion";
 // Context
 import GlobalContext from "./Context/Context";
 
-// Components
-import ScrollToTopButton from "./Components/ScrollToTop"
-
 // Home
 import HomeStartupPage from "./Pages/Home/Startup/Startup";
 const HomeBusinessPage = lazy(() => import("./Pages/Home/Business"))
@@ -345,7 +342,6 @@ function App() {
       <div className="App" style={{ "--header-height": `${headerHeight}px` }}>
         {
           <main style={{ marginTop: headerHeight, marginBottom: footerHeight }}>
-            <ScrollToTopButton />
             <AnimatePresence exitBeforeEnter>
               <Suspense fallback={<></>}>
                 <Routes>

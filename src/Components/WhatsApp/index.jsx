@@ -5,7 +5,7 @@ import logo from "../../Assets/img/logo_mini.png"
 const WhatsAppFloatingBtn = () => {
     return (
         <FloatingWhatsApp
-            phoneNumber="+5548988167561"
+            phoneNumber="+5548991750930"
             accountName="GDPlace - Comercial"
             allowEsc
             allowClickAway

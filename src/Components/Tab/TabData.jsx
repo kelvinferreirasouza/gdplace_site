@@ -1,3 +1,7 @@
+import CarouselDistribuidores from "../Marcas/CarouselDistribuidores"
+import CarouselInversores from "../Marcas/CarouselInversores"
+import CarouselModulos from "../Marcas/CarouselModulos"
+
 const TabData01 = [
     {
         tabTitle: 'PLANNING',
@@ -28,16 +32,37 @@ const TabData01 = [
         content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna ut enim ad minim veniam nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         buttonTitle: "Discover Litho",
         buttonLink: "/"
+    }
+]
+
+const TabDataMarcas = [
+    {
+        tabTitle: 'INVERSORES',
+        subtitle: 'MARCAS LÍDERES DE VENDAS',
+        tabicons: "",
+        title: 'Marcas de Inversores',
+        content: 'Nosso catalogo de marcas de inversores solares oferece opções diversificadas para atender às suas necessidades específicas. Explore nossa seleção para encontrar marcas confiáveis e eficientes que ajudarão a maximizar o potencial da sua instalação solar.',
+        carousel: <CarouselInversores />,
+        buttonTitle: "VER CATÁLOGO",
+        buttonLink: "/"
     },
     {
-        tabTitle: 'CAMPAIGN',
-        subtitle: 'INNOVATIVE SOLUTIONS',
+        tabTitle: 'MÓDULOS',
+        subtitle: 'MARCAS LÍDERES DE VENDAS',
         tabicons: "",
-        title: 'Business campaign',
-        img: 'https://via.placeholder.com/800x625',
-        content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna ut enim ad minim veniam nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        buttonTitle: "Discover Litho",
+        title: 'Marcas de Módulos',
+        carousel: <CarouselModulos />,
+        content: 'Nossa listagem abrange desde módulos de inversores solares de alta potência e eficiência até opções mais acessíveis, adequadas para diferentes necessidades e orçamentos. Destacamos marcas que oferecem recursos avançados, como otimizadores de potência individual, monitoramento em tempo real e conectividade inteligente.',
+        buttonTitle: "VER CATÁLOGO",
         buttonLink: "/"
+    },
+    {
+        tabTitle: 'DISTRIBUIDORES',
+        subtitle: 'OS MELHORES DISTRIBUIDORES',
+        tabicons: "",
+        title: 'Nossos Distribuidores',
+        carousel: <CarouselDistribuidores />,
+        content: 'Nosso sistema conecta você aos principais fornecedores de equipamentos e produtos solares. Nossa listagem reúne uma variedade de distribuidores confiáveis e experientes, prontos para atender às suas necessidades específicas de energia solar.',
     }
 ]
 
@@ -951,4 +976,4 @@ const TabData07 = [
     }
 ]
 
-export { TabData01, TabData02, TabData03, TabData05, TabData06, TabData07 }
+export { TabDataMarcas, TabData01, TabData02, TabData03, TabData05, TabData06, TabData07 }

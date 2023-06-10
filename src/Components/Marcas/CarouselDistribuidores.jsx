@@ -1,24 +1,25 @@
 import { Col, Container, Row } from "react-bootstrap";
-import { MarcasInversores } from "../Marcas/MarcasData";
+import { Distribuidores } from "../Marcas/MarcasData";
 import { fadeIn } from "../../Functions/GlobalAnimations";
-import Marcas from "../Marcas/Carousel";
+import Marcas from "./Carousel";
 
-const CarouselInversores = () => {
+const CarouselDistribuidores = () => {
     return (
         <Container>
           <Row>
             <Col className="relative">
               <Marcas
                 theme="client-logo-style-05"
+                class="swiper-modulo"
                 className="swiper-navigation-04 swiper-navigation-light"
-                data={MarcasInversores}
+                data={Distribuidores}
                 animation={fadeIn}
                 carousel={true}
                 carouselOption={{
                   slidesPerView: 1,
-                  loop: true,
+                  loop: false,
                   spaceBetween: 20,
-                  autoplay: { delay: 3000, disableOnInteraction: false },
+                  autoplay: { delay: 1000, disableOnInteraction: false },
                   navigation: false,
                   breakpoints: { 1200: { slidesPerView: 4 }, 992: { slidesPerView: 3 }, 768: { slidesPerView: 3 } }
                 }}
@@ -29,4 +30,4 @@ const CarouselInversores = () => {
     )
 }
 
-export default CarouselInversores
+export default CarouselDistribuidores

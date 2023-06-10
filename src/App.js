@@ -345,7 +345,10 @@ function App() {
             <AnimatePresence exitBeforeEnter>
               <Suspense fallback={<></>}>
                 <Routes>
+                  {/* GDPlace Routes */}
                   <Route path="/" element={<ApplicationPage style={{ "--base-color": "#2887c5" }} />} />
+                  <Route path="blog" element={<BlogStandardPage style={{ "--base-color": "#2887c5" }} />} />
+                  <Route path="planos" element={<PricingTablePage />} />
 
                   {/* Headers */}
                   <Route path="headers">
@@ -517,8 +520,6 @@ function App() {
                   <Route path="/portfolio/single-project-page-03" element={<SingleProjectPage03 style={{ "--base-color": "#0038e3" }} />} />
                   <Route path="/portfolio/single-project-page-04" element={<SingleProjectPage04 style={{ "--base-color": "#fd961e" }} />} />
                   <Route path="/portfolio/single-project-page-05" element={<SingleProjectPage05 style={{ "--base-color": "#0038e3" }} />} />
-
-                  <Route path="blog" element={<BlogStandardPage style={{ "--base-color": "#2887c5" }} />} />
 
                   {/* Blogs */}
                   <Route path="blogs" element={<BlogPage style={{ "--base-color": "#0038e3" }} />}>

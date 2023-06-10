@@ -10,6 +10,7 @@ const CarouselInversores = () => {
             <Col className="relative">
               <Marcas
                 theme="client-logo-style-05"
+                class="swiper-inversor"
                 className="swiper-navigation-04 swiper-navigation-light"
                 data={MarcasInversores}
                 animation={fadeIn}

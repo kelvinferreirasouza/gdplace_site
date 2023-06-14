@@ -253,4 +253,93 @@ const IconWithTextData_11 = [
         content: "Lorem ipsum is simply dummy text of the printing and typesetting industry lorem ipsum text"
     }
 ]
-export { IconWithTextData_01, IconWithTextData_02, IconWithTextData_03, IconWithTextData_04, IconWithTextData_05, IconWithTextData_06, IconWithTextData_07, IconWithTextData_08, IconWithTextData_09, IconWithTextData_10, IconWithTextData_11 }
+
+const IconWithTextData_functions = [
+    {
+        icon: "line-icon-Navigation-LeftWindow text-basecolor text-[40px] text-fastblue",
+        title: "Comparador de Preços",
+        content: "Os melhores preços, entre vários distribuidores.",
+        favorite: true
+    },
+    {
+        icon: "line-icon-Cursor-Click2 text-basecolor text-[40px] text-fastblue",
+        title: "Diversas Opções de Kits",
+        content: "Tenha a certeza da melhor escolha e garanta a melhor compra.",
+        favorite: true
+    },
+    {
+        icon: "line-icon-Like-2 text- text-[40px] text-fastblue",
+        title: "Calculadora Solar",
+        content: "Dimensione o sistema automaticamente, com os dados da fatura de luz.",
+        favorite: true
+    },
+    {
+        icon: "line-icon-Talk-Man text-basecolor text-[40px] text-fastblue",
+        title: "Proposta Comercial",
+        content: "Utilize nossos modelos de proposta e personalize com seus dados.",
+        favorite: true
+    },
+    {
+        icon: "line-icon-Heart text-basecolor text-[40px] text-fastblue",
+        title: "Atualização de Proposta",
+        content: "Emita nova proposta com base em uma proposta já realizada.",
+        favorite: true
+    },
+    {
+        icon: "line-icon-Gear-2 text-basecolor text-[40px] text-fastblue",
+        title: "Envio Automático de Propostas",
+        content: "Por e-mail ou Whatsapp, facilitando o dia a dia do vendedor",
+        favorite: true
+    },
+    {
+        icon: "line-icon-Gear-2 text-basecolor text-[40px] text-fastblue",
+        title: "Gestão Comercial",
+        content: "Gerencie suas vendas e visualize relatórios gerenciais em tempo real.",
+        favorite: false
+    },
+    {
+        icon: "line-icon-Gear-2 text-basecolor text-[40px] text-fastblue",
+        title: "Gerenciamento de Orçamentos",
+        content: "Monte orçamentos, e tenha o histórico armazenados em nuvem.",
+        favorite: false
+    },
+    {
+        icon: "line-icon-Gear-2 text-basecolor text-[40px] text-fastblue",
+        title: "Gerenciamento de Pedidos",
+        content: "Acompanhe os seus pedidos desde a aprovação até a entrega do produto.",
+        favorite: false
+    },
+    {
+        icon: "line-icon-Gear-2 text-basecolor text-[40px] text-fastblue",
+        title: "Relatórios Gerenciais",
+        content: "Nossos relatórios gerenciais oferecem dados precisos e atualizados.",
+        favorite: false
+    },
+    {
+        icon: "line-icon-Gear-2 text-basecolor text-[40px] text-fastblue",
+        title: "Medidor de Performace",
+        content: "Monitore o desempenho da sua equipe de vendas em tempo real.",
+        favorite: false
+    },
+    {
+        icon: "line-icon-Gear-2 text-basecolor text-[40px] text-fastblue",
+        title: "Promoções Diárias",
+        content: "Aproveite descontos exclusivos em kits solares para você economizar.",
+        favorite: false
+    },
+]
+
+export { 
+    IconWithTextData_01,
+    IconWithTextData_02,
+    IconWithTextData_03, 
+    IconWithTextData_04, 
+    IconWithTextData_05,
+    IconWithTextData_06,
+    IconWithTextData_07, 
+    IconWithTextData_08,
+    IconWithTextData_09,
+    IconWithTextData_10,
+    IconWithTextData_11,
+    IconWithTextData_functions
+}

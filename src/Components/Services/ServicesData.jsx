@@ -178,4 +178,67 @@ const serviceData7 = [
     },
 ]
 
-export { serviceData1, serviceData2, serviceData3, serviceData4, serviceData5, serviceData6, serviceData7 }
+const functionsData = [
+    {
+        img: "https://via.placeholder.com/197x197",
+        title: "COMPARADOR DE PREÇOS",
+        content: "Os melhores preços, entre vários distribuidores."
+    },
+    {
+        img: "https://via.placeholder.com/197x197",
+        title: "DIVERSAS OPÇÕES DE KITS",
+        content: "Tenha a certeza da melhor escolha e garanta a melhor compra."
+    },
+    {
+        img: "https://via.placeholder.com/197x197",
+        title: "CALCULADORA SOLAR",
+        content: "Dimensione o sistema automaticamente, com os dados da fatura de luz."
+    },
+    {
+        img: "https://via.placeholder.com/197x197",
+        title: "PROPOSTA COMERCIAL",
+        content: "Utilize nossos modelos de proposta e personalize com seus dados."
+    },
+    {
+        img: "https://via.placeholder.com/197x197",
+        title: "ATUALIZAÇÃO DE PROPOSTA",
+        content: "Emita nova proposta com base em uma proposta já realizada."
+    },
+    {
+        img: "https://via.placeholder.com/197x197",
+        title: "ENVIO AUTOMÁTICO DE PROPOSTAS",
+        content: "Por e-mail ou Whatsapp, facilitando o dia a dia do vendedor"
+    },
+    {
+        img: "https://via.placeholder.com/197x197",
+        title: "GESTÃO COMERCIAL",
+        content: "Gerencie suas vendas e visualize relatórios gerenciais em tempo real."
+    },
+    {
+        img: "https://via.placeholder.com/197x197",
+        title: "GERENCIAMENTO DE ORÇAMENTOS",
+        content: "Monte orçamentos, e tenha o histórico armazenados em nuvem."
+    },
+    {
+        img: "https://via.placeholder.com/197x197",
+        title: "GERENCIAMENTO DE PEDIDOS",
+        content: "Acompanhe o processo do seu pedido desde a aprovação até a entrega do produto."
+    },
+    {
+        img: "https://via.placeholder.com/197x197",
+        title: "RELATÓRIOS GERENCIAIS",
+        content: "Visualize os resultados em tempo real"
+    },
+    {
+        img: "https://via.placeholder.com/197x197",
+        title: "MEDIDOR DE PERFORMACE",
+        content: "Monitore o desempenho da sua equipe de vendas em tempo real."
+    },
+    {
+        img: "https://via.placeholder.com/197x197",
+        title: "PROMOÇÕES DIÁRIAS",
+        content: "Acesso a kits com descontos exclusivos"
+    }
+]
+
+export { functionsData, serviceData1, serviceData2, serviceData3, serviceData4, serviceData5, serviceData6, serviceData7 }

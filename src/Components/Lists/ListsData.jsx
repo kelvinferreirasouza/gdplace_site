@@ -1,19 +1,15 @@
 const ListData01 = [
     {
         icon: "fas fa-check",
-        content: "Advanced customization theme options",
+        content: "Calculadora Solar com a Lei nº 14.300 ",
     },
     {
         icon: "fas fa-check",
-        content: "Manage and share your workspace",
+        content: "Gerenciamento de Orçamentos e Pedidos",
     },
     {
         icon: "fas fa-check",
-        content: "Powerful theme for creatives designer",
-    },
-    {
-        icon: "fas fa-check",
-        content: "Browse amazing popular social features",
+        content: "Proposta Comercial Customizável",
     },
 ]
 

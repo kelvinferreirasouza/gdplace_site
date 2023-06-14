@@ -115,15 +115,15 @@
 //List Style 07
 .list-style-07 {
   li {
-    @apply flex items-start rounded-md mb-[35px];
+    @apply flex items-start rounded-md mb-[24px];
+    foo: bar;
   }
   i {
-    @apply text-white text-center h-[25px] w-[25px] mr-[25px] mt-[5px] rounded-[50%] pt-[4px];
+    @apply text-green-500 text-center h-[25px] w-[25px] mr-[25px] mt-[5px] rounded-[50%];
     flex: 0 0 auto;
-    background-color: var(--base-color, #0038e3);
 
     &::before {
-      font-size: 10px;
+      font-size: 16px;
     }
   }
 

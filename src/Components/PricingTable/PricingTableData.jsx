@@ -49,35 +49,43 @@ const pricingTable01 = [
 const pricingTable02 = [
     {
         icon: "line-icon-Boy",
-        title: "STANDARD",
-        price: "$800",
-        term: "PER MONTH",
-        plans: ['Limited hours', 'Limited projects'],
-        buttonTitle: "Get started",
+        title: "Gratuito",
+        price: "R$0",
+        term: "POR MÊS",
+        plans: ['Buscas de kits', 'Emissão proposta comercial	'],
+        buttonTitle: "Contratar",
         buttonLink: "/page/pricing-packages",
     },
     {
         icon: "line-icon-Business-Mens",
-        title: "ADVANCED",
-        price: "$1200",
-        term: "PER MONTH",
-        plans: ['Unlimited hours', 'Unlimited projects', 'Unlimited variations'],
-        buttonTitle: "Get started",
+        title: "START",
+        price: "R$66,90",
+        term: "POR MÊS",
+        plans: ['Buscas de kits', 'Emissão proposta comercial	', 'Unlimited variations'],
+        buttonTitle: "Contratar",
         buttonLink: "/page/pricing-packages",
-        popular: {
-            isPopular: true
-        }
     },
     {
         icon: "line-icon-Business-ManWoman",
-        title: "BUSINESS",
-        price: "$900",
-        term: "PER MONTH",
-        plans: ['Unlimited hours', 'Unlimited projects'],
-        buttonTitle: "Get started",
+        title: "LIGHT",
+        price: "R$97,00",
+        term: "POR MÊS",
+        plans: ['Buscas de kits', 'Emissão proposta comercial	'],
+        buttonTitle: "Contratar",
         buttonLink: "#"
+    },
+    {
+        icon: "line-icon-Business-ManWoman",
+        title: "PRO",
+        price: "R$147,00",
+        term: "POR MÊS",
+        plans: ['Buscas de kits', 'Emissão proposta comercial	'],
+        buttonTitle: "Contratar",
+        buttonLink: "#",
+        popular: {
+            isPopular: true
+        }
     }
-
 ]
 
 const pricingTable03MonthData = [

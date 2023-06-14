@@ -50,7 +50,7 @@ const PricingTablePage = () => {
         <Container className="px-[7%] md:px-[15px]">
           <Row>
             <Col className='mb-[7%]'>
-              <h6 className="font-serif text-gray-900 text-center font-medium mb-[25px] lg:mb-[15px]">Pricing table style 02</h6>
+              <h6 className="font-serif text-gray-900 text-center font-medium mb-[25px] lg:mb-[15px]">Planos GDPlace</h6>
             </Col>
           </Row>
           <PricingTable02 grid="row-cols-1 row-cols-md-3 gap-y-[30px] sm:mx-0 justify-center items-center" theme="pricing-table-style-02" className="" data={pricingTable02} />

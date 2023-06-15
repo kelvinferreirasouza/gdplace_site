@@ -14,7 +14,7 @@ import { TiltBox } from '../../Components/FancyText/FancyText'
 import IconWithText from '../../Components/IconWithText/IconWithText'
 import Funcionalidades from '../../Components/IconWithText/Funcionalidades';
 import CustomModal from '../../Components/CustomModal'
-import FooterStyle10 from '../../Components/Footers/FooterStyle10';
+import FooterStyle02 from '../../Components/Footers/FooterStyle02';
 import SideButtons from "../../Components/SideButtons";
 import { fadeIn, fadeInBlur, fadeInRight, fadeInLeft, zoomIn } from "../../Functions/GlobalAnimations";
 import { TextAnime } from '../../Components/FancyText/FancyText';
@@ -419,7 +419,7 @@ const ApplicationPage = (props) => {
                 {/* Section End */}
 
                 {/* Footer Start */}
-                <FooterStyle10 theme="dark" className="text-slateblue bg-[#262b35]" />
+                <FooterStyle02 theme="dark" className="text-slateblue bg-[#262b35]" />
                 {/* Footer End */}
             </InViewPort>
         </div>

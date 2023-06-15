@@ -3,62 +3,62 @@ const FooterData = [
         title: "Empresa",
         submenu: [
             {
-                title: "Quem Somos",
-                link: "/page/about-us"
+                title: "Sobre Nós",
+                link: "/"
             },
             {
-                title: "Company services",
-                link: "/page/our-services"
+                title: "Blog",
+                link: "/blog"
             },
             {
-                title: "Job opportunities",
-                link: "/page/our-team"
+                title: "Planos",
+                link: "/planos"
             },
             {
-                title: "Contact us",
-                link: "/page/contact-classic"
+                title: "Parceiros",
+                link: "/planos"
             },
         ]
     },
     {
-        title: "customer",
+        title: "Sistema",
         submenu: [
             {
-                title: "Client support",
-                link: "/page/faq-s"
+                title: "Funcionalidades",
+                link: "/funcionalidades"
             },
             {
-                title: "Pricing packages",
+                title: "Marcas Disponíveis",
                 link: "/page/pricing-packages"
             },
             {
-                title: "Company history",
+                title: "Distribuidores",
                 link: "/page/our-story"
             },
             {
-                title: "Our process",
+                title: "Suporte",
                 link: "/page/our-process"
             },
         ]
     },
     {
-        title: "Additional",
+        title: "Outros",
         submenu: [
             {
-                title: "Our story",
+                title: "FAQ",
                 link: "/page/our-story"
             },
             {
-                title: "Who we are",
-                link: "/page/who-we-are"
-            },
-            {
-                title: "Our process",
+                title: "Política de Privacidade",
                 link: "/page/our-process"
             },
             {
-                title: "Latest news",
+                title: "Termos de Uso",
                 link: "/page/latest-news"
+            },
+            {
+                title: "Contato",
+                link: "/page/who-we-are"
             },
         ]
     },

@@ -22,12 +22,14 @@ import Lists from '../../Components/Lists/Lists';
 import PricingTable03 from '../../Components/PricingTable/PricingTable03';
 // import video from '../../Assets/video/conexoes_redux.mp4'
 import TabMarcas from '../../Components/Tab/TabMarcas';
-import { pricingTable03MonthData, pricingTable03YearData } from '../../Components/PricingTable/PricingTableData';
+import Counter from '../../Components/Counters/Counter';
 
 // Data
+import { pricingTable03MonthData, pricingTable03YearData } from '../../Components/PricingTable/PricingTableData';
 import { ListData01 } from '../../Components/Lists/ListsData';
 import { IconWithTextData_functions } from '../../Components/IconWithText/IconWithTextData';
 import { TabDataMarcas } from '../../Components/Tab/TabData';
+import { CounterData03 } from '../../Components/Counters/CounterData';
 
 // function
 import InViewPort from '../../Components/InViewPort';
@@ -189,7 +191,7 @@ const ApplicationPage = (props) => {
             {/* Section End*/}
 
             {/* Section Start */}
-            <section className="py-[130px] lg:py-[95px] md:py-[75px] sm:py-[50px] bg-lightgray overflow-hidden">
+            <section className="py-[80px] lg:py-[95px] md:py-[75px] sm:py-[50px] bg-lightgray overflow-hidden">
                 <Container className='p-0'>
                     <Row className="items-center">
                         <m.div className="md:mb-[50px] sm:mb-[30px] col-xl-7 col-lg-6 order-lg-1 p-0" {...{ ...fadeInRight, transition: { delay: 0.5, ease: "circOut", duration: 0.6 } }}>
@@ -254,11 +256,26 @@ const ApplicationPage = (props) => {
                         </m.div>
                     </Row>
                 </Container>
+
+                {/* Section Start */}
+                <m.section className="pt-[64px] lg:pt-[54px] md:pt-[64px] sm:pt-[54px] xs:pt-[24px]" {...fadeIn}>
+                    <Container>
+                        <Counter
+                            theme="counter-style-05"
+                            grid="items-center justify-center sm:gap-y-10"
+                            className="font-serif col-lg-3 col-md-3 col-sm-6 col-xs-1 text-darkgray text-left sm:text-center"
+                            data={CounterData03}
+                            duration={2}
+                            postfix_sign="+"
+                        />
+                    </Container>
+                </m.section>
+                {/* Section End */}
             </section>
             {/* Section End */}
 
             {/* Section Start */}
-            <section className="py-[130px] overflow-hidden lg:py-[90px] md:py-[75px] sm:py-[50px]">
+            <section className="py-[80px] overflow-hidden lg:py-[90px] md:py-[75px] sm:py-[50px]">
                 <Container>
                     <m.div className="row justify-center" {...fadeIn}>
                         <Col lg={5} sm={6} xl={4} className="text-center mb-16">
@@ -349,7 +366,7 @@ const ApplicationPage = (props) => {
 
                 {/* Section Start */}
                 <m.section 
-                    className="py-[130px] relative lg:py-[90px] md:py-[75px] sm:py-[50px] bg-white"
+                    className="py-[80px] relative lg:py-[90px] md:py-[75px] sm:py-[50px] bg-white"
                     {...fadeIn}
                 >
                     <Container>

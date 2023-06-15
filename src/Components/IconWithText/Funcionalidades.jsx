@@ -67,7 +67,7 @@ const Funcionalidades = (props) => {
                                         <Buttons
                                             type="submit"
                                             ariaLabel="button"
-                                            className="mx-[10px] rounded font-medium font-serif uppercase bg-[#fff] hover:text-white" 
+                                            className="mx-[10px] rounded font-medium font-serif uppercase bg-[#f7f7f7] hover:text-white" 
                                             size="lg"
                                             color="#2887c5" 
                                             themeColor="#2887c5"

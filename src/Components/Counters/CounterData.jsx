@@ -56,27 +56,27 @@ const CounterData02 = [
 const CounterData03 = [
     {
         number:{
-            text: "24",
+            text: "800",
         },
-        title:"COUNTRIES",
+        title:"USUÁRIOS",
     },
     {
         number:{
-            text: "28",
+            text: "500",
         },
-        title:"LANGUAGES",
+        title:"EMPRESAS",
     },
     {
         number:{
-            text: "72",
+            text: "300",
         },
-        title:"CHANNELS",
+        title:"PRODUTOS",
     },
     {
         number:{
-            text: "92",
+            text: "15",
         },
-        title:"BRANDS",
+        title:"DISTRIBUIDORES",
     },
 ]
 

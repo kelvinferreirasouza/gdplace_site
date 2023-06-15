@@ -87,10 +87,10 @@ const Counter = (props) => {
             >
               {item.number && (
                 <props.as className={`counter-numbers${item.number.class ? ` ${item.number.class}` : ""}`}>
+                  {props.postfix_sign && <span className="postfix_sign">{props.postfix_sign}</span>}
                   <CountUp start={0} end={item.number.text} duration={props.duration} easing={false}>
                     {({ countUpRef, start }) => ( <m.span ref={countUpRef} whileInView={start} viewport={{ once: true }} /> )}
                   </CountUp>
-                  {props.postfix_sign && <span className="postfix_sign">{props.postfix_sign}</span>}
                 </props.as>
               )}
               {(item.title || item.content) && (

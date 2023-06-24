@@ -150,9 +150,9 @@ const ApplicationPage = (props) => {
             {/* Section End*/}
 
             {/* Section Start */}
-            <section className="pt-[80px] lg:py-[95px] md:py-[75px] sm:py-[50px] bg-white overflow-hidden">
-                <Container className='pb-[80px]'>
-                    <Row className="items-center">
+            <section className="pt-[100px] lg:py-[95px] md:py-[75px] sm:py-[50px] bg-white overflow-hidden">
+                <Container>
+                    <Row className="pb-[100px] items-center">
                         <m.div className="md:mb-[50px] sm:mb-[30px] col-xl-7 col-lg-6 order-lg-1 p-0" {...{ ...fadeInRight, transition: { delay: 0.5, ease: "circOut", duration: 0.6 } }}>
                             <div className='max-w-[668px]'>
                                 <video
@@ -275,7 +275,7 @@ const ApplicationPage = (props) => {
                 </m.section>
                 {/* Info Banner Style 02 End */}
 
-                <section className="py-[80px] overflow-hidden bg-[#f0f0f0] lg:py-[90px] md:py-[75px] sm:py-[50px]">
+                <section className="py-[100px] overflow-hidden bg-[#f0f0f0] lg:py-[90px] md:py-[75px] sm:py-[50px]">
                     <Container>
                         <Row className="justify-center mb-3">
                             <m.div className="col-xl-7 col-lg-7 col-sm-8 text-center" {...fadeIn}>
@@ -324,7 +324,7 @@ const ApplicationPage = (props) => {
             <InViewPort>
                 {/* Section Start */}
                 <m.section 
-                    className="py-[80px] relative lg:py-[90px] md:py-[75px] sm:py-[50px] bg-white"
+                    className="py-[100px] relative lg:py-[90px] md:py-[75px] sm:py-[50px] bg-white"
                     {...fadeIn}
                 >
                     <Container>

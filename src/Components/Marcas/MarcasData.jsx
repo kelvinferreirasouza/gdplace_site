@@ -94,6 +94,29 @@ const Distribuidores = [
         img2: '/assets/img/distribuidores/pulse.png',
         target: "_self",
         link: '#'
+    },
+    {
+        img: '/assets/img/distribuidores/bcsolar.png',
+        img2: '/assets/img/distribuidores/bluesun.png',
+        target: "_self",
+        link: '#'
+    },
+    {
+        img: '/assets/img/distribuidores/contesolar.png',
+        img2: '/assets/img/distribuidores/foco.png',
+        target: "_self",
+        link: '#'
+    },
+    {
+        img: '/assets/img/distribuidores/go.png',
+        img2: '/assets/img/distribuidores/viener.png',
+        target: "_self",
+        link: '#'
+    },
+    {
+        img: '/assets/img/distribuidores/wt.png',
+        target: "_self",
+        link: '#'
     }
 ]
 

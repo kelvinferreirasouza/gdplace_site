@@ -4,26 +4,16 @@ const HeaderData = [
         link: '/'
     },
     {
-        title: 'Sobre Nós',
-        dropdown: [
-            {
-                title: 'Quem Somos',
-                dropdown: [
-                    {
-                        title: 'About us',
-                        link: '/page/about-us'
-                    },
-                    {
-                        title: 'Who we are',
-                        link: '/page/who-we-are'
-                    }
-                ]
-            }
-        ]
+        title: 'Kit Rápido',
+        link: '/kit-rapido'
     },
     {
-        title: 'Planos',
-        link: '/planos'
+        title: 'Sou Integrador',
+        link: '/integrador'
+    },
+    {
+        title: 'Sou Distribuidor',
+        link: '/distribuidor'
     },
     {
         title: 'Blog',
@@ -32,10 +22,6 @@ const HeaderData = [
     {
         title: 'Contato',
         link: '/contato'
-    },
-    {
-        title: 'Sou Distribuidor',
-        link: '/distribuidor'
     },
 ]
 

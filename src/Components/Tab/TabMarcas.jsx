@@ -14,14 +14,20 @@ import { TabDataMarcas } from './TabData'
 
 const TabMarcas = (props) => {
     return (
-        <Tabs className="tab-style-01 font-serif mb-[7.4rem] flex bg-transparent border-b-0 font-medium text-center justify-center md:mb-[60px] sm:mb-[20px]">
+        <Tabs className="tab-style-01 font-serif mb-[5.4rem] flex bg-transparent border-b-0 font-medium text-center justify-center md:mb-[60px] sm:mb-[20px]">
             {
                 props.data.map((item, i) => {
                     return (
-                        <Tab className="tab-style-01" key={i} eventKey={i} title={item.tabTitle ? item.tabTitle : "Tab Title"} onClick={console.log('oiii')} mountOnEnter={true} unmountOnExit={true}>
+                        <Tab className="tab-style-01" key={i} eventKey={i} title={item.tabTitle ? item.tabTitle : "Tab Title"} mountOnEnter={true} unmountOnExit={true}>
                             <m.div className='row items-center' {...{ ...fadeIn, transition: { duration: 0.9 }, viewport: { once: false } }}>
+                                {item.carousel &&
+                                    <Col md={7} className="sm:mb-[40px]">
+                                        {item.carousel}
+                                    </Col>
+                                }
+
                                 <Col
-                                    lg={{ offset: 1, span: 5 }}
+                                    lg={{ span: 5 }}
                                     md={6}
                                     className="md:px-[15px] sm:px-[15px] sm:text-start xs:text-center"
                                 >
@@ -32,7 +38,7 @@ const TabMarcas = (props) => {
                                     }
 
                                     {item.title && 
-                                        <h5 className="font-serif font-semibold text-darkgray tracking-[-0.5px] mb-[35px] sm:mb-[30px]">
+                                        <h5 className="font-serif font-semibold text-darkgray tracking-[-0.5px] mb-[24px] sm:mb-[30px]">
                                             {item.title}
                                         </h5>
                                     }
@@ -57,7 +63,7 @@ const TabMarcas = (props) => {
                                 </Col>
                                 
                                 {item.img &&
-                                    <Col md={6} className="sm:mb-[40px]">
+                                    <Col md={5} className="sm:mb-[40px]">
                                         <img
                                             height="434"
                                             width="555"
@@ -65,12 +71,6 @@ const TabMarcas = (props) => {
                                             src={item.img}
                                             alt="tab"
                                         />
-                                    </Col>
-                                }
-
-                                {item.carousel &&
-                                    <Col md={6} className="sm:mb-[40px]">
-                                        {item.carousel}
                                     </Col>
                                 }
                             </m.div>

@@ -260,6 +260,8 @@ const BlogStandardPage = lazy(() => import("./Pages/Blogs/BlogStandard"))
 const CategoryPage = lazy(() => import("./Pages/Blogs/CategoryPage"))
 const AuthorPage = lazy(() => import("./Pages/Blogs/AuthorPage"))
 
+const IntegradorPage = lazy(() => import("./Pages/Integrador"))
+
 const BlogPostLayout01 = lazy(() => import("./Pages/Blogs/LayoutPage/BlogPostLayout01"))
 const BlogPostLayout02 = lazy(() => import("./Pages/Blogs/LayoutPage/BlogPostLayout02"))
 const BlogPostLayout03 = lazy(() => import("./Pages/Blogs/LayoutPage/BlogPostLayout03"))
@@ -347,6 +349,7 @@ function App() {
                 <Routes>
                   {/* GDPlace Routes */}
                   <Route path="/" element={<ApplicationPage style={{ "--base-color": "#2887c5" }} />} />
+                  <Route path="integrador" element={<IntegradorPage style={{ "--base-color": "#2887c5" }} />} />
                   <Route path="blog" element={<BlogStandardPage style={{ "--base-color": "#2887c5" }} />} />
                   <Route path="planos" element={<PricingTablePage />} />
 

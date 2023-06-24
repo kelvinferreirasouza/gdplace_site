@@ -18,7 +18,7 @@ const HeaderGdplace = (props) => {
                     </Link>
                 </Col>
                 <Menu className="col-auto md:hidden" {...props} />
-                <MobileMenu className="order-last d-lg-none" type="modern" {...props} />
+                <MobileMenu className="order-last d-lg-none mr-[6px]" type="modern" {...props} />
                 <Col className="col-auto text-end pe-0 font-size-0 pl-[15px] sm:hidden">
                     <ScrollTo href='#' to="download" offset={0} delay={0} spy={true} smooth={true} duration={800} className="nav-link section-link">
                         <Buttons 

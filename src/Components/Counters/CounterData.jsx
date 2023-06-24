@@ -3,23 +3,23 @@ const CounterData01 = [
         number:{
             text: "2530",
         },
-        title: "Custom shortcodes",
-        content: "Lorem ipsum is simply dummy text the printing typesetting",
+        title: "Empresas Cadastradas",
+        content: "Lorem ipsum is simply dummy text the printing typesettings ourest",
     },
     {
         number:{
-            text: "2000",
+            text: "5000000",
         },
-        title: "Completed projects",
-        content: "Lorem ipsum is simply dummy text the printing typesetting",
+        title: "Orcamentos Realizados",
+        content: "Lorem ipsum is simply dummy text the printing typesettings ourest",
     },
     {
         number:{
             text: "1958",
         },
-        title: "Working hours",
-        content: "Lorem ipsum is simply dummy text the printing typesetting",
-    },
+        title: "Pedidos Realizados",
+        content: "Lorem ipsum is simply dummy text the printing typesettings ourest",
+    }
 ]
 
 const CounterData02 = [

@@ -37,6 +37,14 @@ const TabData01 = [
 
 const TabDataMarcas = [
     {
+        tabTitle: 'DISTRIBUIDORES',
+        subtitle: 'OS MELHORES DISTRIBUIDORES',
+        tabicons: "",
+        title: 'Nossos Distribuidores',
+        carousel: <CarouselDistribuidores />,
+        content: 'Nosso sistema conecta você aos principais fornecedores de equipamentos e produtos solares. Nossa listagem reúne uma variedade de distribuidores confiáveis e experientes, prontos para atender às suas necessidades específicas de energia solar.',
+    },
+    {
         tabTitle: 'INVERSORES',
         subtitle: 'MARCAS LÍDERES DE VENDAS',
         tabicons: "",
@@ -55,14 +63,6 @@ const TabDataMarcas = [
         content: 'Nossa listagem abrange desde módulos de inversores solares de alta potência e eficiência até opções mais acessíveis, adequadas para diferentes necessidades e orçamentos. Destacamos marcas que oferecem recursos avançados, como otimizadores de potência individual, monitoramento em tempo real e conectividade inteligente.',
         buttonTitle: "VER CATÁLOGO",
         buttonLink: "/"
-    },
-    {
-        tabTitle: 'DISTRIBUIDORES',
-        subtitle: 'OS MELHORES DISTRIBUIDORES',
-        tabicons: "",
-        title: 'Nossos Distribuidores',
-        carousel: <CarouselDistribuidores />,
-        content: 'Nosso sistema conecta você aos principais fornecedores de equipamentos e produtos solares. Nossa listagem reúne uma variedade de distribuidores confiáveis e experientes, prontos para atender às suas necessidades específicas de energia solar.',
     }
 ]
 

@@ -20,6 +20,14 @@ import { PropTypes } from 'prop-types';
 // css
 import "../../Assets/scss/components/_team.scss"
 
+const arrayPagination = (array, n) => {
+    const pageSize = Math.ceil(array.length / n);
+    return Array.from({ length: pageSize }, (_, index) => {
+        const start = index * n;
+        return array.slice(start, start + n);
+    });
+}
+
 const TeamSwitch = (params, item, i) => {
     switch (params.theme) {
         case "team-style-01":
@@ -39,6 +47,7 @@ const TeamSwitch = (params, item, i) => {
 
 const Team = (props) => {
     const swiperRef = React.useRef(null)
+    const dataPaginate = arrayPagination(props.data, 2)
     const style = {
         "--brand-color": typeof (props.overlay) === "object" ? `linear-gradient(to right top, ${props.overlay.map(item => item)})` : props.overlay,
     }
@@ -53,10 +62,12 @@ const Team = (props) => {
                     modules={[Navigation, Pagination, Autoplay]}
                     {...props.carouselOption}>
                     {
-                        props.data.map((item, i) => {
+                        dataPaginate.map((items, i) => {
                             return (
                                 <SwiperSlide style={style} key={i} className={props.theme}>
-                                    {TeamSwitch(props, item, i)}
+                                    {items.map((item, i2) => {
+                                        return TeamSwitch(props, item, i2)
+                                    })}
                                 </SwiperSlide>
                             )
                         })

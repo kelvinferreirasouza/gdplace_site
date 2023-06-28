@@ -287,7 +287,7 @@ const IconWithTextData_functions = [
     },
     {
         icon: "line-icon-Gear-2 text-basecolor text-[40px] text-fastblue",
-        title: "Envio Automático de Propostas",
+        title: "Envio Automatico de Propostas",
         content: "Por e-mail ou Whatsapp, facilitando o dia a dia do vendedor",
         favorite: true
     },

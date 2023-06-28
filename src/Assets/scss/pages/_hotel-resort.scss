@@ -37,6 +37,7 @@
     .swiper-pagination {
         bottom: 39px;
         --swiper-pagination-bullet-horizontal-gap: 5px;
+        transform: translate(-50%);
     }
 }
 

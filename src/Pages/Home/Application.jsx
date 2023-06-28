@@ -16,18 +16,17 @@ import { fadeIn, fadeInBlur, fadeInLeft, fadeInRight, zoomIn } from "../../Funct
 import { TextAnime } from '../../Components/FancyText/FancyText';
 import Lists from '../../Components/Lists/Lists';
 import video from '../../Assets/video/conexoes_redux.mp4'
-import TabMarcas from '../../Components/Tab/TabMarcas';
 import Counter from '../../Components/Counters/Counter';
+import InViewPort from '../../Components/InViewPort';
 
 // Data
 import { ListData01 } from '../../Components/Lists/ListsData';
-import { TabDataMarcas } from '../../Components/Tab/TabData';
 import { CounterData01 } from '../../Components/Counters/CounterData';
 
 // function
-import InViewPort from '../../Components/InViewPort';
 import HeaderGdplace from '../../Components/Header';
 import WhatsAppFloatingBtn from '../../Components/WhatsApp';
+import MarcasDisponiveis from './MarcasDisponiveis';
 
 const ApplicationPage = (props) => {
     return (
@@ -154,7 +153,7 @@ const ApplicationPage = (props) => {
                 <Container>
                     <Row className="pb-[100px] items-center">
                         <m.div className="md:mb-[50px] sm:mb-[30px] col-xl-7 col-lg-6 order-lg-1 p-0" {...{ ...fadeInRight, transition: { delay: 0.5, ease: "circOut", duration: 0.6 } }}>
-                            <div className='max-w-[668px]'>
+                            <div className='max-w-[668px] md:mx-auto'>
                                 <video
                                     src={video}
                                     width="650"
@@ -306,7 +305,7 @@ const ApplicationPage = (props) => {
                             </Col>
                             <Col
                                 lg={{ span: 6, offset: 1 }}
-                                className="icon-with-texts relative flex items-center"
+                                className="icon-with-texts relative flex items-center md:justify-center"
                             >
                                 <m.div 
                                     {...{ ...fadeInLeft, transition: { delay: 0.5, ease: "circOut", duration: 0.6 } }}
@@ -320,46 +319,8 @@ const ApplicationPage = (props) => {
             </section>
             {/* Section End */}
 
-            {/* Lazy Load HTML */}
             <InViewPort>
-                {/* Section Start */}
-                <m.section 
-                    className="py-[100px] relative lg:py-[90px] md:py-[75px] sm:py-[50px] bg-white"
-                    {...fadeIn}
-                >
-                    <Container>
-                        <Row className="justify-center">
-                            <Col md={12} className="text-center mb-[4%]">
-                                <h5 className="font-serif text-darkgray font-medium -tracking-[1px] m-[0px] sm:mb-[16px]">
-                                    Marcas Disponíveis
-                                </h5>
-                            </Col>
-                        </Row>
-
-                        <TabMarcas data={TabDataMarcas} />
-
-                        <Row>
-                            <Col className="text-center mt-[40px] lg:mt-16">
-                                <m.span className="font-serif text-darkgray text-lg text-center" {...fadeIn}>
-                                    Ficou interessado em trabalhar conosco?&nbsp;
-
-                                    <ScrollTo
-                                        to="pricing"
-                                        offset={0}
-                                        delay={0}
-                                        spy={true}
-                                        smooth={true}
-                                        duration={800}
-                                        className="font-semibold inline-block text-decoration-line-bottom text-darkgray hover:text-darkgray cursor-pointer"
-                                    >
-                                        Comece agora mesmo    
-                                    </ScrollTo>
-                                </m.span>
-                            </Col>
-                        </Row>
-                    </Container>
-                </m.section>
-                {/* Section End */}
+                <MarcasDisponiveis />
             </InViewPort>
 
             {/* Footer Start */}

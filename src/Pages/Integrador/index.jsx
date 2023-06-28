@@ -3,34 +3,29 @@ import React from 'react'
 // Libraries
 import { Col, Container, Row, Tabs, Tab } from 'react-bootstrap'
 import { m } from 'framer-motion';
-import { Link as ScrollTo } from "react-scroll"
 
 // Components
 import Buttons from '../../Components/Button/Buttons'
-import Typed from 'react-typed';
-import { TiltBox } from '../../Components/FancyText/FancyText'
 import IconWithText from '../../Components/IconWithText/IconWithText'
-import Funcionalidades from '../../Components/IconWithText/Funcionalidades';
 import CustomModal from '../../Components/CustomModal'
 import FooterStyle02 from '../../Components/Footers/FooterStyle02';
 import SideButtons from "../../Components/SideButtons";
-import { fadeIn, fadeInBlur, fadeInRight, fadeInLeft, zoomIn } from "../../Functions/GlobalAnimations";
-import { TextAnime } from '../../Components/FancyText/FancyText';
-import Lists from '../../Components/Lists/Lists';
+import { fadeIn, fadeInRight, fadeInLeft, zoomIn } from "../../Functions/GlobalAnimations";
 import PricingTable03 from '../../Components/PricingTable/PricingTable03';
-// import video from '../../Assets/video/conexoes_redux.mp4'
-import TabMarcas from '../../Components/Tab/TabMarcas';
+
+import Funcionalidade from '../../Components/Team/Funcionalidade';
 
 // Data
 import { pricingTable03MonthData, pricingTable03YearData } from '../../Components/PricingTable/PricingTableData';
-import { ListData01 } from '../../Components/Lists/ListsData';
 import { IconWithTextData_functions } from '../../Components/IconWithText/IconWithTextData';
-import { TabDataMarcas } from '../../Components/Tab/TabData';
 
 // function
 import InViewPort from '../../Components/InViewPort';
 import HeaderGdplace from '../../Components/Header';
 import WhatsAppFloatingBtn from '../../Components/WhatsApp';
+import BannerTopVideo from './BannerTopVideo';
+import MarcasDisponiveis from '../Home/MarcasDisponiveis';
+import Parceiros from './Parceiros';
 
 const IconWithTextData = [
     {
@@ -69,194 +64,141 @@ const IntegradorPage = (props) => {
     return (
         <div style={props.style}>
             <SideButtons />
-            {/* Header Start */}
+
             <HeaderGdplace type="reverse-scroll" {...props} />
-            {/* Header End */}
 
             <WhatsAppFloatingBtn />
 
+            <BannerTopVideo />
+
             {/* Section Start */}
-            <section className="bg-cover bg-no-repeat overflow-visible bg-center" style={{ backgroundImage: "url('/assets/img/webp/home/banner-background.webp')" }}>
+            <m.section className="pt-[130px] lg:pt-[90px] md:pt-[75px] xs:pt-[50px] overflow-hidden" {...fadeIn}>
                 <Container>
-                    <Row className="justify-center sm:text-center">
-                        <Col lg={6} xl={5} md={7} sm={8} className="h-[100vh] flex flex-col items-start justify-center pb-40 pt-[10rem] lg:pt-40 lg:pb-32 md:pt-24 md:pb-40 sm:h-auto sm:pb-20 md:h-[650px]">
-                            <m.span
-                                {...{ ...fadeInBlur, transition: { delay: 0.5, ease: "easeInOut" } }} 
-                                className="
-                                    font-serif
-                                    font-semibold
-                                    text-md
-                                    leading-[24px]
-                                    tracking-[1px]
-                                    text-gradient
-                                    bg-gradient-to-r
-                                    from-[#ffff]
-                                    to-[#ffff]
-                                    border-b
-                                    border-gradient-light-white-light-red
-                                    inline-block
-                                    uppercase
-                                    mb-[45px]
-                                    sm:mt-0
-                                    sm:mx-auto
-                                    sm:mb-[35px]
-                                ">
-                                Comparador de Preços Solar
-                            </m.span>
-                            <m.h2 
-                                {...{ ...fadeInBlur, transition: { delay: 1, ease: "easeInOut" } }}
-                                className="
-                                    font-serif 
-                                    text-white
-                                    font-bold
-                                    tracking-[-3px]
-                                    uppercase 
-                                    mb-10
-                                    sm:mb-[16px]
-                                    min-h-[121px]
-                                    d-flex
-                                    flex-column
-                                    gap-[1.5rem]
-                                    sm:w-[100%]
-                                    sm:items-center
-                                "
-                            >
-                                <span className="text-[70px] lg:text-[50px] mr-[35px] xs:mr-0">Turbine</span>
-                                <Typed
-                                    className="
-                                        text-[70px]
-                                        lg:text-[50px]
-                                        text-white 
-                                        text-left
-                                        inline-block
-                                        leading-[42px]
-                                        lg:align-center"
-                                    strings={["seu negócio", "suas vendas"]}
-                                    typeSpeed={180}
-                                    backSpeed={120}
-                                    showCursor
-                                    cursorChar="|"
-                                />
-                            </m.h2>
-
-                            <m.p 
-                                {...{ ...fadeInBlur, transition: { delay: 1.2, ease: "easeInOut" } }}
-                                className="text-lg leading-[30m.px] text-white mb-[25px] font-light w-[85%] sm:w-full md:text-xmd sm:mb-[16px] xs:leading-[22px]"
-                            >
-                                Agilize seus processos com o mais completo comparador de preços do setor solar.
-                            </m.p>
-
-                            <m.div
-                                {...{ ...fadeInBlur, transition: { delay: 1.2, ease: "easeInOut" } }}
-                                className="sm:w-[100%] sm:items-center"
-                            >
-                                <ScrollTo href='#' to="download" offset={0} delay={0} spy={true} smooth={true} duration={800} className="sm:contents">
-                                    <Buttons 
-                                        type="submit"
-                                        aria-label="download section down"
-                                        className="font-medium btn-fancy font-serif uppercase tracking-[1px] btn-gradient mt-6 md:mb-[15px] rounded-[2px] sm:my-0 sm:mt-[16px] sm:mx-auto"
-                                        themeColor={["#003ef5", "#078cff"]} 
-                                        size="lg"
-                                        color="#fff" 
-                                        icon="fas fa-arrow-right"
-                                        iconPosition="after"
-                                        title="Cadastre-se" 
-                                        onClick={(e) => {
-                                            e.preventDefault();
-                                            window.open('https://sistema.gdplace.com.br/integrador/landingPage', '_blank', 'noopener,noreferrer')
-                                        }}
-                                    />
-                                </ScrollTo>
-                            </m.div>
+                    <Row className="items-center">
+                        <Col xl={5} lg={6} className="pb-12 lg:pb-28 sm:pb-[50px]">
+                            <div className="text-xmd mb-[20px] font-serif">
+                                O Sistema mais completo para o Integrador Solar
+                            </div>
+                            <h5 className="font-serif text-darkgray font-medium mb-[5.5rem]">
+                                Acelere sua rotina, otime seus processos e aumente seus resultados com a GDPlace
+                            </h5>
+                            <Row>
+                                <Col>
+                                    <div className="flex">
+                                        <div className="mr-[35px]">
+                                            <i className="line-icon-File-Pie text-[50px] text-fastblue"></i>
+                                        </div>
+                                        <div className="feature-box-content">
+                                            <span className="text-darkgray block mb-[10px] font-serif font-medium">
+                                                Gerador de Propostas
+                                            </span>
+                                            <p className="w-[95%]">
+                                                Tenha disponivel diversos modelos de propostas comerciais, 
+                                                completas e com a sua logo para apresentar e encantar o seu cliente.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </Col>
+                                <Col className="col-12">
+                                    <div className="h-[1px] bg-[#ededed] my-[40px] w-full xs:my-[30px]"></div>
+                                </Col>
+                                <Col>
+                                <div className="flex">
+                                    <div className="mr-[35px]">
+                                        <i className="line-icon-Solar text-[50px] text-fastblue"></i>
+                                    </div>
+                                    <div className="feature-box-content">
+                                        <span className="text-darkgray block mb-[10px] font-serif font-medium">
+                                            Orçamentos de Kits em Segundos
+                                        </span>
+                                        <p className="w-[95%]">
+                                            Abandone planilhas e diversas plataformas.
+                                            Gere seus orçamentos com mais de 15 distribuidores em tempo real e garanta as melhores condições.
+                                        </p>
+                                    </div>
+                                </div>
+                                </Col>
+                            </Row>
                         </Col>
+                        <Col
+                            lg={6}
+                            xl={{ offset: 1 }} 
+                            className="d-flex flex-column align-self-end justify-center text-center text-xl-start min-h-[676px] "
+                            style={{ backgroundImage: "url('/assets/img/webp/home/banner-background.webp')" }}
+                        >
+                            <h5 className="mx-auto my-0 font-serif text-white font-medium">
+                                Kit Rápido GDPlace
+                            </h5>
 
-                        <Col xl={{ offset: 1 }} lg={6} md={5} className="z-0 text-left self-center md:self-center p-0">
-                            <TiltBox className="bottom-[0] lg:-bottom-[40px]">
-                            <m.img
-                                {...{ ...fadeInBlur, transition: { delay: 0.5, ease: "easeInOut" } }}
-                                className='w-[500px] h-[450px] lg:w-[350px] lg:h-[350px] sm:w-[80%] sm:h-[100%] lg:mx-auto'
-                                src="/assets/img/webp/home/pc_gdplace.webp"
-                                alt="Sistema GDPlace"
+                            <img
+                                className="mx-auto"
+                                loading="lazy" 
+                                src="/assets/img/busca-kits.png"
+                                width="800"
+                                height="666"
+                                alt="who-we-are"
                             />
-                            </TiltBox>
+
+                            <Buttons
+                                ariaLabel="button"
+                                to="/kit-rapido"
+                                className="w-fit mx-auto mt-3 btn-fill shadow-[0_0_15px_rgba(0,0,0,0.10)] font-medium btn-fancy font-serif uppercase rounded-[20px] btn-shadow text-[15px]" 
+                                size="lg" 
+                                themeColor="#fff" 
+                                color="#000" 
+                                title="Quero conhecer" 
+                            />
                         </Col>
                     </Row>
                 </Container>
-            </section>
-            {/* Section End*/}
+            </m.section>
+            {/* Section End */}
 
             {/* Section Start */}
-            <section className="py-[80px] lg:py-[95px] md:py-[75px] sm:py-[50px] bg-lightgray overflow-hidden">
-                <Container className='pb-[80px]'>
-                    <Row className="items-center">
-                        <m.div className="md:mb-[50px] sm:mb-[30px] col-xl-7 col-lg-6 order-lg-1 p-0" {...{ ...fadeInRight, transition: { delay: 0.5, ease: "circOut", duration: 0.6 } }}>
-                            <div className='max-w-[668px]'>
-                                {/* <video src={video} width="650" height="650" autoPlay={true} muted={true} loop={true}></video> */}
-                                <img 
-                                    src="/assets/img/webp/what-we-offers-03.webp"
-                                    className="shadow-md rounded-[5px] overflow-hidden w-full"
-                                    width="405"
-                                    // height="945"
-                                    alt="what-we-offers"
-                                />
-                            </div>
-                        </m.div>
-                        <m.div className="sm:pl-[15px] col-xl-5 col-lg-6 order-lg-2 pr-0" {...fadeIn}>
-                            <h5 className="font-serif font-medium text-darkgray leading-[40px] mb-[32px]">
-                                <span className="w-100 font-serif font-medium text-md text-gradient bg-gradient-to-r from-[#083c6c] via-[#075eb1] to-[#2c89c6] tracking-[.5px] uppercase inline-block mb-[20px] sm:mb-[10px]">
-                                    SOLUÇÕES PARA O SETOR SOLAR
-                                </span>
-
-                                <span className="initial p-0">
-                                    Nós desenvolvemos o futuro da energia solar, una-se a nós e economize
-
-                                    <TextAnime
-                                        duration={3000}
-                                        color={["#083c6c", "#075eb1", "#2c89c6"]}
-                                        lineColor="#075eb1"
-                                        className="text-left fancy-border-bottom !font-semibold text-darkgray pl-3"
-                                        animation="slide"
-                                        data={["tempo.", "dinheiro."]} 
-                                    />
-                                </span>
-                            </h5>
-                            <p className="mb-[25px]">
-                                Otimize seu tempo ao padronizar seus processos, de forma rápida e prática, permitindo que você foque no que realmente importa.
-                            </p>
-
-                            <Lists theme="list-style-07" className="" data={ListData01} animation={fadeIn} />
-
-                            <m.div
-                                {...{ ...fadeInBlur, transition: { delay: 1.2, ease: "easeInOut" } }}
-                                className="sm:w-[100%] sm:items-center"
-                            >
-                                <ScrollTo href='#' to="download" offset={0} delay={0} spy={true} smooth={true} duration={800} className="sm:contents">
-                                    <Buttons 
-                                        to={"/integrador"}
-                                        aria-label="download section down"
-                                        className="font-medium font-serif uppercase tracking-[1px] mt-6 md:mb-[15px] rounded-[2px] sm:my-0 sm:mt-[16px] sm:mx-auto bg-[#f7f7f7] hover:text-white"
-                                        themeColor="#075eb1" 
-                                        size="lg"
-                                        color="#075eb1"
-                                        icon="fas fa-wrench"
-                                        iconPosition="before"
-                                        title="Sou Integrador"
-                                    />
-
-                                    <Buttons 
-                                        to={"/distribuidor"}
-                                        aria-label="download section down"
-                                        className="ml-4 font-medium font-serif uppercase tracking-[1px] mt-6 md:mb-[15px] rounded-[2px] sm:my-0 sm:mt-[16px] sm:mx-auto bg-[#f7f7f7] hover:text-white" 
-                                        themeColor="#075eb1" 
-                                        size="lg"
-                                        color="#075eb1"
-                                        icon="fas fa-truck"
-                                        iconPosition="before"
-                                        title="Sou Distribuidor" 
-                                    />
-                                </ScrollTo>
-                            </m.div>
-                        </m.div>
+            <section className="bg-lightgray pt-[80px] pb-[45px] lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px]">
+                <Container>
+                    <Row>
+                        <Col className="mb-[6%]">
+                            <span className="w-100 text-center font-serif font-medium text-md text-gradient bg-gradient-to-r from-[#083c6c] via-[#075eb1] to-[#2c89c6] tracking-[.5px] uppercase inline-block mb-[20px] sm:mb-[10px]">
+                                Funcionalidades
+                            </span>
+                            <h6 className="font-serif text-dark text-center font-medium mb-[25px] lg:mb-[15px] m-0">
+                                Por que você deve escolher a GDPlace
+                            </h6>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col lg={5} sm={6} xl={6} className="text-center d-flex align-items-center">
+                            <img height={341} width={500} src="/assets/img/integrador/desktopMobile.png" alt="blog-category" />
+                        </Col>
+                        <Col lg={7} sm={6} xl={6} className="text-center px-2">
+                            <Funcionalidade
+                                theme="icon-with-text-06"
+                                data={IconWithTextData_functions}
+                                carousel={true}
+                                carouselOption={{
+                                    slidesPerView: 2,
+                                    spaceBetween: 16,
+                                    navigation: false,
+                                    fadeEffect: {
+                                        crossFade: true
+                                    },
+                                    autoplay: {
+                                        delay: 3000,
+                                        disableOnInteraction: false 
+                                    },
+                                    pagination: {
+                                        dynamicBullets: true,
+                                        clickable: true
+                                    },
+                                    breakpoints: {
+                                        1200: {slidesPerView: 2},
+                                        992: { slidesPerView: 2 }, 
+                                        768: { slidesPerView: 2 } 
+                                    } 
+                                }} 
+                            />
+                        </Col>
                     </Row>
                 </Container>
             </section>
@@ -328,48 +270,8 @@ const IntegradorPage = (props) => {
 
             {/* Lazy Load HTML */}
             <InViewPort>
-                {/* Section Start */}
-                <section className="bg-lightgray py-[80px] lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px]">
-                    <Container>
-                        <Row>
-                            <Col className="mb-[6%]">
-                                <span className="w-100 text-center font-serif font-medium text-md text-gradient bg-gradient-to-r from-[#083c6c] via-[#075eb1] to-[#2c89c6] tracking-[.5px] uppercase inline-block mb-[20px] sm:mb-[10px]">
-                                    Funcionalidades
-                                </span>
-                                <h6 className="font-serif text-dark text-center font-medium mb-[25px] lg:mb-[15px] m-0">
-                                    Por que você deve escolher a GDPlace
-                                </h6>
-                            </Col>
-                        </Row>
-                        <Funcionalidades
-                            grid="row-cols-1 row-cols-lg-3 row-cols-sm-2 text-center gap-y-10"
-                            theme="icon-with-text-06"
-                            data={IconWithTextData_functions}
-                            animation={fadeIn}
-                            animationDelay={0.2}
-                        />
-                    </Container>
-                </section>
-                {/* Section End */}
 
-                {/* Section Start */}
-                <m.section 
-                    className="py-[80px] relative lg:py-[90px] md:py-[75px] sm:py-[50px] bg-white"
-                    {...fadeIn}
-                >
-                    <Container>
-                        <Row className="justify-center">
-                            <Col md={12} className="text-center mb-[4%]">
-                                <h6 className="heading-5 font-serif font-light text-[#262b35]">
-                                    Marcas Disponíveis
-                                </h6>
-                            </Col>
-                        </Row>
-
-                        <TabMarcas data={TabDataMarcas} />
-                    </Container>
-                </m.section>
-                {/* Section End */}
+                <MarcasDisponiveis />                    
 
                 {/* Section Start */}
                 <section className="pb-[105px] pt-[40px] lg:pb-[90px] md:pb-[75px] md:pt-0 sm:py-[50px] text-center bg-lightgray">
@@ -405,11 +307,13 @@ const IntegradorPage = (props) => {
                     </Container>
                 </section>
                 {/* Section End */}
-
-                {/* Footer Start */}
-                <FooterStyle02 theme="dark" className="text-slateblue bg-[#262b35]" />
-                {/* Footer End */}
             </InViewPort>
+
+            <Parceiros />
+
+            {/* Footer Start */}
+            <FooterStyle02 theme="dark" className="text-slateblue bg-[#262b35]" />
+            {/* Footer End */}
         </div>
     )
 }

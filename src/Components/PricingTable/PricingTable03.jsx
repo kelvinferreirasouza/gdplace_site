@@ -16,7 +16,23 @@ const PriceTable03 = (props) => {
                             <div className="w-full">
                                 {item.title && <h3 className="title">{item.title}</h3>}
                                 {item.icon && <i className={`${item.icon} icon`}></i>}
-                                {item.price && <h4 className="price">{item.price}</h4>}
+                                {(item.price && item.priceCondition)
+                                    ?
+                                        <div className='d-flex justify-center align-items-center'>
+                                            <h4 className="price">
+                                                {item.price}
+                                            </h4>
+
+                                            <small>
+                                                {item.priceCondition}
+                                            </small>
+                                        </div>
+                                    :
+                                        <h4 className="price">
+                                            {item.price}
+                                        </h4>
+                                }
+
                                 <ul className="services-wrapper">
                                     {
                                         item.plans && item.plans.map((item, i) => {

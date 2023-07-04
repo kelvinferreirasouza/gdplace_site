@@ -45,19 +45,19 @@ const TestimonialsData03 = [
         name: 'Herman Miller',
         designation: 'ThemeZaa Design',
         content: 'Lorem ipsum dolor amet consectetur do tempor incididunt labore et dolore magna nostrud exercitation ullamco.',
-        img: 'https://via.placeholder.com/125x125',
+        img: '/assets/img/webp/avtar28.webp',
     },
     {
         name: 'Jeremy Girard',
         designation: 'Microsoft Corporation',
         content: 'Lorem ipsum dolor amet consectetur do tempor incididunt labore et dolore magna nostrud exercitation ullamco.',
-        img: 'https://via.placeholder.com/125x125'
+        img: '/assets/img/webp/avtar28.webp'
     },
     {
         name: 'Alexander Harvard',
         designation: 'ThemeZaa Design',
         content: 'Lorem ipsum dolor amet consectetur do tempor incididunt labore et dolore magna nostrud exercitation ullamco.',
-        img: 'https://via.placeholder.com/125x125'
+        img: '/assets/img/webp/avtar28.webp'
     }
 ]
 

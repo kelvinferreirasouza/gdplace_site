@@ -1,6 +1,8 @@
+import { Fragment } from "react"
 import CarouselDistribuidores from "../Marcas/CarouselDistribuidores"
 import CarouselInversores from "../Marcas/CarouselInversores"
 import CarouselModulos from "../Marcas/CarouselModulos"
+import DataPorqueEscolher from "./DataPorqueEscolher"
 
 const TabData01 = [
     {
@@ -32,6 +34,189 @@ const TabData01 = [
         content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna ut enim ad minim veniam nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         buttonTitle: "Discover Litho",
         buttonLink: "/"
+    }
+]
+
+const TabContentPorqueEscolher01 = () => {
+    return (
+        <Fragment>
+            <p className="mb-3">
+                Tecnologia é a nossa essência! As soluções Sienge sempre estiveram na vanguarda tecnológica, 
+                desde o desenvolvimento de um software especialista em 1990, até o uso da Computação Cognitiva, já presente no nosso dia a dia,
+                entregando valor para nossos clientes.
+            </p>
+
+            <p className="mb-3">
+                O uso da cognição tem como objetivo utilizar máquinas para executarem tarefas
+                humanas de forma autônoma e inteligente para facilitar ainda mais a rotina de 
+                trabalho de uma empresa da construção.
+            </p>
+
+            <p>
+                Tanta revolução foi reconhecida mundialmente como solução excepcional pela maior 
+                empresa de TI do mundo: a IBM. No IBM Beacon Awards 2019.
+            </p>
+        </Fragment>
+    )
+}
+
+const TabContentPorqueEscolher02 = () => {
+    return (
+        <Fragment>
+            <p className="mb-3">
+                Tecnologia é a nossa essência! As soluções Sienge sempre estiveram na vanguarda tecnológica, 
+                desde o desenvolvimento de um software especialista em 1990, até o uso da Computação Cognitiva, já presente no nosso dia a dia,
+                entregando valor para nossos clientes.
+            </p>
+
+            <p className="mb-3">
+                O uso da cognição tem como objetivo utilizar máquinas para executarem tarefas
+                humanas de forma autônoma e inteligente para facilitar ainda mais a rotina de 
+                trabalho de uma empresa da construção.
+            </p>
+
+            <p>
+                Tanta revolução foi reconhecida mundialmente como solução excepcional pela maior 
+                empresa de TI do mundo: a IBM. No IBM Beacon Awards 2019.
+            </p>
+        </Fragment>
+    )
+}
+
+const TabContentPorqueEscolher03 = () => {
+    return (
+        <Fragment>
+            <p className="mb-3">
+                Tecnologia é a nossa essência! As soluções Sienge sempre estiveram na vanguarda tecnológica, 
+                desde o desenvolvimento de um software especialista em 1990, até o uso da Computação Cognitiva, já presente no nosso dia a dia,
+                entregando valor para nossos clientes.
+            </p>
+
+            <p className="mb-3">
+                O uso da cognição tem como objetivo utilizar máquinas para executarem tarefas
+                humanas de forma autônoma e inteligente para facilitar ainda mais a rotina de 
+                trabalho de uma empresa da construção.
+            </p>
+
+            <p>
+                Tanta revolução foi reconhecida mundialmente como solução excepcional pela maior 
+                empresa de TI do mundo: a IBM. No IBM Beacon Awards 2019.
+            </p>
+        </Fragment>
+    )
+}
+
+const TabContentPorqueEscolher04 = () => {
+    return (
+        <Fragment>
+            <p className="mb-3">
+                Tecnologia é a nossa essência! As soluções Sienge sempre estiveram na vanguarda tecnológica, 
+                desde o desenvolvimento de um software especialista em 1990, até o uso da Computação Cognitiva, já presente no nosso dia a dia,
+                entregando valor para nossos clientes.
+            </p>
+
+            <p className="mb-3">
+                O uso da cognição tem como objetivo utilizar máquinas para executarem tarefas
+                humanas de forma autônoma e inteligente para facilitar ainda mais a rotina de 
+                trabalho de uma empresa da construção.
+            </p>
+
+            <p>
+                Tanta revolução foi reconhecida mundialmente como solução excepcional pela maior 
+                empresa de TI do mundo: a IBM. No IBM Beacon Awards 2019.
+            </p>
+        </Fragment>
+    )
+}
+
+const TabContentPorqueEscolher05 = () => {
+    return (
+        <Fragment>
+            <p className="mb-3">
+                Tecnologia é a nossa essência! As soluções Sienge sempre estiveram na vanguarda tecnológica, 
+                desde o desenvolvimento de um software especialista em 1990, até o uso da Computação Cognitiva, já presente no nosso dia a dia,
+                entregando valor para nossos clientes.
+            </p>
+
+            <p className="mb-3">
+                O uso da cognição tem como objetivo utilizar máquinas para executarem tarefas
+                humanas de forma autônoma e inteligente para facilitar ainda mais a rotina de 
+                trabalho de uma empresa da construção.
+            </p>
+
+            <p>
+                Tanta revolução foi reconhecida mundialmente como solução excepcional pela maior 
+                empresa de TI do mundo: a IBM. No IBM Beacon Awards 2019.
+            </p>
+        </Fragment>
+    )
+}
+
+const TabDataPorqueEscolher = [
+    {
+        tabNumber: '01',
+        tabTitle: 'Tecnologia Premiada',
+        title: 'We offer a full range of digital marketing services',
+        content: 
+            <DataPorqueEscolher 
+                title="Tecnologia Premiada 1"
+                content={TabContentPorqueEscolher01()} 
+                imgVideo="/assets/img/webp/home-travel-agency-about.webp" 
+                buttonTitle="Saiba mais"
+                buttonLink="#"
+            />            
+    },
+    {
+        tabNumber: '02',
+        tabTitle: 'Especialista na Construção',
+        title: 'We are expert in search engine and social media',
+        content: 
+            <DataPorqueEscolher 
+                title="Tecnologia Premiada 2"
+                content={TabContentPorqueEscolher02()} 
+                imgVideo="/assets/img/webp/home-travel-agency-about.webp" 
+                buttonTitle="Saiba mais"
+                buttonLink="#"
+            />
+    },
+    {
+        tabNumber: '03',
+        tabTitle: 'Melhor Atendimento',
+        title: 'We created digital ideas that are bigger and bolder',
+        content: 
+            <DataPorqueEscolher 
+                title="Tecnologia Premiada 3"
+                content={TabContentPorqueEscolher03()} 
+                imgVideo="/assets/img/webp/home-travel-agency-about.webp" 
+                buttonTitle="Saiba mais"
+                buttonLink="#"
+            />
+    },
+    {
+        tabNumber: '04',
+        tabTitle: 'Integração do ecossistema',
+        title: 'Litho is meant to simplify the website building',
+        content: 
+            <DataPorqueEscolher 
+                title="Tecnologia Premiada 4"
+                content={TabContentPorqueEscolher04()} 
+                imgVideo="/assets/img/webp/home-travel-agency-about.webp" 
+                buttonTitle="Saiba mais"
+                buttonLink="#"
+            />
+    },
+    {
+        tabNumber: '05',
+        tabTitle: 'Referência na construção',
+        title: 'Litho is meant to simplify the website building',
+        content: 
+            <DataPorqueEscolher 
+                title="Tecnologia Premiada 5"
+                content={TabContentPorqueEscolher05()} 
+                imgVideo="/assets/img/webp/home-travel-agency-about.webp" 
+                buttonTitle="Saiba Mais"
+                buttonLink="#"
+            />
     }
 ]
 
@@ -976,4 +1161,13 @@ const TabData07 = [
     }
 ]
 
-export { TabDataMarcas, TabData01, TabData02, TabData03, TabData05, TabData06, TabData07 }
+export { 
+    TabDataMarcas,
+    TabDataPorqueEscolher,
+    TabData01,
+    TabData02,
+    TabData03,
+    TabData05,
+    TabData06,
+    TabData07 
+}

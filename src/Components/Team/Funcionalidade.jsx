@@ -25,7 +25,6 @@ const arrayPagination = (array, n) => {
 const Funcionalidade = (props) => {
     const swiperRef = React.useRef(null)
     const dataPaginate = arrayPagination(props.data, 2)
-    console.log(dataPaginate)
     const style = {
         "--brand-color": typeof (props.overlay) === "object" ? `linear-gradient(to right top, ${props.overlay.map(item => item)})` : props.overlay,
     }

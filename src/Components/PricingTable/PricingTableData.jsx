@@ -91,9 +91,9 @@ const pricingTable02 = [
 const pricingTable03MonthData = [
     {
         icon: "line-icon-Boy",
-        title: "BASIC PLAN",
+        title: "Start",
         subtitle: "Basic features",
-        price: "$9.99",
+        price: "R$89,00",
         term: "monthly",
         plans: [
             `<strong>5</strong> Domains`,
@@ -107,9 +107,9 @@ const pricingTable03MonthData = [
     },
     {
         icon: "line-icon-Business-ManWoman",
-        title: "STANDARD PLAN",
+        title: "Light",
         subtitle: "MOST POPULAR",
-        price: "$19.99",
+        price: "R$129,00",
         term: "monthly",
         plans: [
             `<strong>10</strong> Domains`,
@@ -125,9 +125,9 @@ const pricingTable03MonthData = [
     },
     {
         icon: "line-icon-Business-Mens",
-        title: "PREMIUM PLAN",
+        title: "Pro",
         subtitle: "ALL YOU MAY NEED",
-        price: "$29.99",
+        price: "R$196,00",
         term: "monthly",
         plans: [
             `<strong>20</strong> Domains`,
@@ -142,9 +142,10 @@ const pricingTable03MonthData = [
 const pricingTable03YearData = [
     {
         icon: "line-icon-Boy",
-        title: "BASIC PLAN",
+        title: "Start",
         subtitle: "Basic features",
-        price: "$90.99",
+        price: "R$66,90",
+        priceCondition: '/mês',
         term: "yearly",
         plans: [
             `<strong>5</strong> Domains`,
@@ -158,9 +159,10 @@ const pricingTable03YearData = [
     },
     {
         icon: "line-icon-Business-ManWoman",
-        title: "STANDARD PLAN",
+        title: "Light",
         subtitle: "MOST POPULAR",
-        price: "$199.99",
+        price: "R$97,00",
+        priceCondition: '/mês',
         term: "yearly",
         plans: [
             `<strong>10</strong> Domains`,
@@ -170,15 +172,13 @@ const pricingTable03YearData = [
         ],
         buttonTitle: "Register now",
         buttonLink: "/page/pricing-packages",
-        popular: {
-            isPopular: true
-        }
     },
     {
         icon: "line-icon-Business-Mens",
-        title: "PREMIUM PLAN",
+        title: "Pro",
         subtitle: "ALL YOU MAY NEED",
-        price: "$290.99",
+        price: "R$147,00",
+        priceCondition: '/mês',
         term: "yearly",
         plans: [
             `<strong>20</strong> Domains`,
@@ -188,6 +188,9 @@ const pricingTable03YearData = [
         ],
         buttonTitle: "Register now",
         buttonLink: "/page/pricing-packages",
+        popular: {
+            isPopular: true
+        }
     },
 ]
 

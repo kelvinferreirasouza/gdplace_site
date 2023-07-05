@@ -396,7 +396,7 @@ const IntegradorPage = (props) => {
                                 <Col>
                                     <div className="flex">
                                         <div className="mr-[35px]">
-                                            <i className="line-icon-File-Pie text-[50px] text-fastblue"></i>
+                                            <i className="line-icon-File-Pie text-[50px] text-basecolor"></i>
                                         </div>
                                         <div className="feature-box-content">
                                             <span className="text-darkgray block mb-[10px] font-serif font-medium">
@@ -415,7 +415,7 @@ const IntegradorPage = (props) => {
                                 <Col>
                                 <div className="flex">
                                     <div className="mr-[35px]">
-                                        <i className="line-icon-Solar text-[50px] text-fastblue"></i>
+                                        <i className="line-icon-Solar text-[50px] text-basecolor"></i>
                                     </div>
                                     <div className="feature-box-content">
                                         <span className="text-darkgray block mb-[10px] font-serif font-medium">

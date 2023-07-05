@@ -57,9 +57,13 @@
   @apply text-darkgray px-0;
 
   .pricing-wrapper {
-    @apply py-[55px] w-full relative;
+    @apply pt-[55px] pb-[40px] w-full relative;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
     background: var(--popular-bg, #fff);
+
+    i {
+      margin-right: 4px;
+    }
   }
 
   .plans-wrapper {
@@ -91,17 +95,12 @@
     z-index: 2;
 
     .pricing-wrapper {
-      @apply py-[65px] overflow-hidden;
+      @apply overflow-hidden;
       box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 15px 0px;
-      left: -10px;
-      width: calc(100% + 20px);
+      width: 100%;
       @screen sm {
         width:100%;
         left:0;
-      }
-
-      i {
-        width: 70px;
       }
 
       .top-head {

@@ -4424,9 +4424,12 @@ h6, .heading-6 {
   @apply text-darkgray px-0;
 }
 .pricing-table-style-02 .pricing-wrapper {
-  @apply py-[55px] w-full relative;
+  @apply pt-[55px] pb-[40px] w-full relative;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
   background: var(--popular-bg, #fff);
+}
+.pricing-table-style-02 .pricing-wrapper i {
+  margin-right: 4px;
 }
 .pricing-table-style-02 .plans-wrapper li {
   padding: 10px 0;
@@ -4447,19 +4450,15 @@ h6, .heading-6 {
   z-index: 2;
 }
 .pricing-table-style-02.popular .pricing-wrapper {
-  @apply py-[65px] overflow-hidden;
+  @apply overflow-hidden;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 15px 0px;
-  left: -10px;
-  width: calc(100% + 20px);
+  width: 100%;
 }
 @screen sm {
   .pricing-table-style-02.popular .pricing-wrapper {
     width: 100%;
     left: 0;
   }
-}
-.pricing-table-style-02.popular .pricing-wrapper i {
-  width: 70px;
 }
 .pricing-table-style-02.popular .pricing-wrapper .top-head {
   @apply font-semibold text-darkgray text-xs font-serif;

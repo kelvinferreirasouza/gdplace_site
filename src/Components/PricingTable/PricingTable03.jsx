@@ -8,50 +8,42 @@ import Buttons from '../Button/Buttons'
 
 const PriceTable03 = (props) => {
     return (
-        <Row className={`pt-[7.5rem] sm:pt-[20px] pb-4 justify-center overflow-hidden ${props.className ? ` ${props.className}` : "" }${props.grid ? ` ${props.grid}` : ""}`}>
+        <Row className={`pt-[4.5rem] sm:pt-[20px] pb-4 justify-center overflow-hidden ${props.className ? ` ${props.className}` : "" }${props.grid ? ` ${props.grid}` : ""}`}>
             {
                 props.data.map((item, i) => {
                     return (
-                        <Col key={i} className={`${props.theme}${(item.popular && item.popular.isPopular) ? " popular" : ""} text-center rounded-md p-[0px] sm:px-[10px]`} style={(item.popular && item.popular.color) && {"--popular-bg": item.popular.color}}>
-                            <div className="w-full">
-                                {item.title && <h3 className="title">{item.title}</h3>}
-                                {item.icon && <i className={`${item.icon} icon`}></i>}
+                        <Col key={i} className={`${props.theme}${(item.popular && item.popular.isPopular) ? " popular" : ""} text-center rounded-md p-[0px] sm:px-[10px]`}>
+                            <div className='pricing-wrapper px-[24px]'>
+                                {(item.popular && item.popular.isPopular) && <span className='top-head hidden uppercase'>+ VENDIDO</span>}
+                                {item.icon && <i className={`${item.icon} text-[50px] text-basecolor inline-block`}></i>}
+                                {item.title && <h3 className="font-semibold mt-[5px] text-xmd uppercase font-serif text-[#262b35] mb-[20px] tracking-normal">{item.title}</h3>}
                                 {(item.price && item.priceCondition)
                                     ?
-                                        <div className='d-flex justify-center align-items-center'>
-                                            <h4 className="price">
-                                                {item.price}
-                                            </h4>
+                                        <div className='d-flex justify-center align-items-end'>
+                                            <h4 className="price-wrap text-[#262b35] mb-0 font-semibold tracking-[-2px] font-serif">{item.price}</h4>
 
-                                            <small>
+                                            <small className='ml-1 text-[14px]'>
                                                 {item.priceCondition}
                                             </small>
                                         </div>
                                     :
-                                        <h4 className="price">
-                                            {item.price}
-                                        </h4>
+                                        <h4 className="price-wrap text-[#262b35] mb-0 font-semibold tracking-[-2px] font-serif">{item.price}</h4>
                                 }
 
-                                <ul className="services-wrapper">
-                                    {
-                                        item.plans && item.plans.map((item, i) => {
-                                            return (
-                                                <li key={i} dangerouslySetInnerHTML={{ __html: item }}></li>
-                                            )
-                                        })
+                                <ul className="my-[20px] pl-0 mx-0 list-none">
+                                    {item.plans && 
+                                        item.plans 
                                     }
                                 </ul>
                                 {
                                     item.buttonLink && (
                                         (item.popular && item.popular.isPopular) ? (
-                                            <Buttons ariaLabel="pricing table" to={item.buttonLink} className="btn-fill font-medium font-serif uppercase mt-[5px]" color="#ffffff" size="md" themeColor="#232323" title={item.buttonTitle} />
+                                            <Buttons ariaLabel="pricing table" to={item.buttonLink} className="btn-fancy font-medium font-serif btn-fill rounded-[2px] uppercase hover:text-[#2887c5] tracking-[0.5px]" color="#fff" size="sm" themeColor="#2887c5" title={item.buttonTitle} />
                                         ) : (
-                                            <Buttons ariaLabel="pricing table"  to={item.buttonLink} className="font-medium font-serif uppercase bg-[#fff] hover:text-white" color="#000" size="md" themeColor="#000" title={item.buttonTitle} />
+                                            <Buttons ariaLabel="pricing table" to={item.buttonLink} className="btn-fancy font-medium font-serif uppercase btn-transparent rounded-[2px] hover:text-white border-[#dbdbdb]" color="#2887c5" size="sm" themeColor="#2887c5" title={item.buttonTitle} />
                                         )
                                     )
                                 }
-
                             </div>
                         </Col>
                     )

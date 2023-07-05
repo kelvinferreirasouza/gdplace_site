@@ -666,7 +666,7 @@ const IntegradorPage = (props) => {
 
                 {/* Section Start */}
                 <section className="pb-[105px] pt-[40px] lg:pb-[90px] md:pb-[75px] md:pt-0 sm:py-[50px] text-center bg-lightgray">
-                    <Container>
+                    <Container className='p-0'>
                         <Row className="justify-center">
                         <Col xl={5} lg={6} sm={7}>
                             <span className="font-serif font-medium text-basecolor text-xmd block mb-[20px] sm:mb-[10px]">
@@ -680,12 +680,12 @@ const IntegradorPage = (props) => {
                         <Container fluid className="switch-tab">
                         <Tabs defaultActiveKey="anual">
                             <Tab eventKey="mensal" title="MENSAL" className="mr-[-2px]">
-                                <Container fluid>
+                                <Container fluid className='p-0'>
                                     <Row className="justify-center">
-                                    <Col className="col-12 col-xl-10 col-lg-11 tab-style-04">
+                                    <Col className="col-12 col-xl-12 col-lg-11 tab-style-04">
                                         <PricingTable03
                                             grid="row row-cols-1 gap-y-10 row-cols-md-3 items-center"
-                                            theme="pricing-table-style-03"
+                                            theme="pricing-table-style-02"
                                             className="pb-[15px]" 
                                             data={pricingTable03MonthData} 
                                         />
@@ -694,16 +694,16 @@ const IntegradorPage = (props) => {
                                 </Container>
                             </Tab>
                             <Tab eventKey="anual" title="ANUAL">
-                            <Container fluid>
+                            <Container fluid className='p-0'>
                                 <Row className="justify-center">
-                                <Col className="col-12 col-xl-10 col-lg-11 tab-style-04">
-                                    <PricingTable03 
-                                        grid="row row-cols-1 row-cols-md-3 gap-y-10 items-center"
-                                        theme="pricing-table-style-03"
-                                        className="pb-[15px]"
-                                        data={pricingTable03YearData} 
-                                    />
-                                </Col>
+                                    <Col className="col-12 col-xl-12 col-lg-11 tab-style-04">
+                                        <PricingTable03 
+                                            grid="row row-cols-1 row-cols-md-3 gap-y-10 items-center"
+                                            theme="pricing-table-style-02"
+                                            className="pb-[15px]"
+                                            data={pricingTable03YearData} 
+                                        />
+                                    </Col>
                                 </Row>
                             </Container>
                             </Tab>
